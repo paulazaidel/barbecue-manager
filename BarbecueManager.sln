@@ -3,9 +3,44 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BarbecueManager.Application", "BarbecueManager.Application", "{5730AB60-37FA-4A3C-8E27-0EF8DD857C9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BarbecueManager.Domain", "BarbecueManager.Domain", "{F3F77772-0833-4B8D-84B4-A6CD177451EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BarbecueManager.Infra", "BarbecueManager.Infra", "{A479344E-BF2E-4299-BED7-654B8B675EB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarbecueManager.Application.API", "BarbecueManager.Application.API\BarbecueManager.Application.API.csproj", "{03529F02-5598-4E0F-95F3-D243B9DA63F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarbecueManager.Domain", "BarbecueManager.Domain\BarbecueManager.Domain.csproj", "{659D8C69-506A-4502-BF1D-ED74AFC6D367}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarbecueManager.Infra.Data", "BarbecueManager.Infra.Data\BarbecueManager.Infra.Data.csproj", "{3E6BF3FF-EC2C-49A3-A46F-97A10736ABFD}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03529F02-5598-4E0F-95F3-D243B9DA63F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03529F02-5598-4E0F-95F3-D243B9DA63F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03529F02-5598-4E0F-95F3-D243B9DA63F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03529F02-5598-4E0F-95F3-D243B9DA63F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{659D8C69-506A-4502-BF1D-ED74AFC6D367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{659D8C69-506A-4502-BF1D-ED74AFC6D367}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{659D8C69-506A-4502-BF1D-ED74AFC6D367}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{659D8C69-506A-4502-BF1D-ED74AFC6D367}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E6BF3FF-EC2C-49A3-A46F-97A10736ABFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E6BF3FF-EC2C-49A3-A46F-97A10736ABFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E6BF3FF-EC2C-49A3-A46F-97A10736ABFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E6BF3FF-EC2C-49A3-A46F-97A10736ABFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{03529F02-5598-4E0F-95F3-D243B9DA63F5} = {5730AB60-37FA-4A3C-8E27-0EF8DD857C9E}
+		{659D8C69-506A-4502-BF1D-ED74AFC6D367} = {F3F77772-0833-4B8D-84B4-A6CD177451EA}
+		{3E6BF3FF-EC2C-49A3-A46F-97A10736ABFD} = {A479344E-BF2E-4299-BED7-654B8B675EB3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {10D07F8D-FBFE-4296-BCAB-BB42D3DA15B7}
