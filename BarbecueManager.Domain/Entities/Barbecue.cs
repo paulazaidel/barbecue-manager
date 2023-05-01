@@ -4,6 +4,7 @@ namespace BarbecueManager.Domain.Entities
 {
     public class Barbecue : Entity
     {
+        public Barbecue() { }
         public Barbecue(string description, string observation, DateTime date, decimal contributionAmountWithDrinks, decimal contributionAmountWithoutDrinks)
         {
             this.Description = description;

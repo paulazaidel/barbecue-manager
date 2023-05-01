@@ -2,6 +2,8 @@
 {
     public class Person : Entity
     {
+        public Person() { }
+
         public Person(string fullname, decimal contributionAmount)
         {
             this.Fullname = fullname;
