@@ -22,10 +22,5 @@ namespace BarbecueManager.Infra.Data.Repositories
                 .Include(prop => prop.Persons)
                 .FirstOrDefaultAsync(prop => prop.Id == id);
         }
-
-        public Task RemovePerson(int idPerson)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

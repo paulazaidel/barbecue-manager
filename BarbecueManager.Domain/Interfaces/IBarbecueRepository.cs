@@ -2,8 +2,5 @@
 
 namespace BarbecueManager.Domain.Interfaces
 {
-    public interface IBarbecueRepository : IRepository<Barbecue> 
-    {
-        Task RemovePerson(int idPerson);
-    }
+    public interface IBarbecueRepository : IRepository<Barbecue> { }
 }

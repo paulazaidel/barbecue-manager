@@ -7,5 +7,6 @@ namespace BarbecueManager.Domain.Interfaces
         Task Add(Person person, int barbecueId);
         Task<Person?> FindById(int id);
         Task<List<Person>> GetAll();
+        Task Delete(int id);
     }
 }

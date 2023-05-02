@@ -38,5 +38,11 @@ namespace BarbecueManager.Domain.services
             var persons = await _repository.GetAll();
             return persons;
         }
+
+        public async Task Delete(int id)
+        {
+            var person = await _repository.GetById(id);
+            await _repository.Delete(person);
+        }
     }
 }

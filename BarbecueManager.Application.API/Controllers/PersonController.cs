@@ -3,6 +3,7 @@ using BarbecueManager.Application.API.Dtos;
 using BarbecueManager.Domain.Entities;
 using BarbecueManager.Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace BarbecueManager.Application.API.Controllers
 {
@@ -26,6 +27,14 @@ namespace BarbecueManager.Application.API.Controllers
             await _service.Add(person, personDto.BarbecueId);
 
             return Ok("Created!");
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            await _service.Delete(id);
+
+            return Ok("Deleted!");
         }
     }
 }
