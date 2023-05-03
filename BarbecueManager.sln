@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarbecueManager.Infra.Data"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarbecueManager.Infra.Data.Tests", "BarbecueManager.Infra.Data.Tests\BarbecueManager.Infra.Data.Tests.csproj", "{AEB79F3A-50C9-4BC2-A991-68390081CE4F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarbecueManager.Domain.Tests", "BarbecueManager.Domain.Tests\BarbecueManager.Domain.Tests.csproj", "{F30E32B6-C0F4-469D-9716-025FD3FCB0E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{AEB79F3A-50C9-4BC2-A991-68390081CE4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEB79F3A-50C9-4BC2-A991-68390081CE4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEB79F3A-50C9-4BC2-A991-68390081CE4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F30E32B6-C0F4-469D-9716-025FD3FCB0E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F30E32B6-C0F4-469D-9716-025FD3FCB0E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F30E32B6-C0F4-469D-9716-025FD3FCB0E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F30E32B6-C0F4-469D-9716-025FD3FCB0E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 		{659D8C69-506A-4502-BF1D-ED74AFC6D367} = {F3F77772-0833-4B8D-84B4-A6CD177451EA}
 		{3E6BF3FF-EC2C-49A3-A46F-97A10736ABFD} = {A479344E-BF2E-4299-BED7-654B8B675EB3}
 		{AEB79F3A-50C9-4BC2-A991-68390081CE4F} = {A479344E-BF2E-4299-BED7-654B8B675EB3}
+		{F30E32B6-C0F4-469D-9716-025FD3FCB0E6} = {F3F77772-0833-4B8D-84B4-A6CD177451EA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {10D07F8D-FBFE-4296-BCAB-BB42D3DA15B7}
