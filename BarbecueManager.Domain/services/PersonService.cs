@@ -22,7 +22,11 @@ namespace BarbecueManager.Domain.services
         public async Task Add(Person person, int barbecueId)
         {
             var barbecue = await _repositoryBarbecue.GetById(barbecueId);
-            
+
+            if (barbecue == null)
+                throw new NullReferenceException("Barbecue does not exist!");
+
+
             person.Barbecues = new List<Barbecue>() { barbecue };
             await _repository.Add(person);
         }
@@ -42,6 +46,9 @@ namespace BarbecueManager.Domain.services
         public async Task Delete(int id)
         {
             var person = await _repository.GetById(id);
+
+            if (person == null) return;
+
             await _repository.Delete(person);
         }
     }

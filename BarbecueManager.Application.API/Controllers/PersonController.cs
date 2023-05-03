@@ -23,8 +23,16 @@ namespace BarbecueManager.Application.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Add(PersonDto personDto)
         {
-            var person = _mapper.Map<Person>(personDto);
-            await _service.Add(person, personDto.BarbecueId);
+            try
+            {
+                var person = _mapper.Map<Person>(personDto);
+                await _service.Add(person, personDto.BarbecueId);
+            }
+            catch (NullReferenceException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
 
             return Ok("Created!");
         }

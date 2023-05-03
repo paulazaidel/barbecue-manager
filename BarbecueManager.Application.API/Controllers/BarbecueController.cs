@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using AutoMapper.Internal;
 using BarbecueManager.Application.API.Dtos;
 using BarbecueManager.Domain.Entities;
 using BarbecueManager.Domain.Interfaces;
@@ -45,6 +46,11 @@ namespace BarbecueManager.Application.API.Controllers
         public async Task<IActionResult> Add(BarbecueDto barbecueDto)
         {
             var barbecue = _mapper.Map<Barbecue>(barbecueDto);
+
+            if (barbecue.Date < DateTime.UtcNow)
+                return BadRequest("Barbecue date can not be less than today!");
+
+
             await _service.Add(barbecue);
 
 
